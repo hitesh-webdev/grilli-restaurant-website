@@ -1206,7 +1206,7 @@ margin-block-end: 40px;
 }
 
 .about .abs-img-2 {
-  top: -65;
+  top: -65px;
   right: 0;
   overflow: hidden;
 
@@ -1805,3 +1805,120 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+@media (min-width: 575px) {
+  :root{
+    --fontSize-body-2:2rem
+  }
+
+  :is(.service  .about) .section-text{
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .contect-number{
+    --fontSize-body-1: 3rem;
+  }
+
+  .topbar{
+    display: block;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding-block: 10px;
+    border-block-end: 1px solid var(--white-alpha-20);
+    z-index: 4;
+    transition: var(--transition-1);
+
+  }
+
+  .topbar:has(~ .header.active) {
+    transform: translateY(-100);
+  }
+
+  .topbar-item:not(.link),
+  .topbar .separator{
+    display: none;
+  }
+
+  .topbar .container,
+  .topbar-item{
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar .container{
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .topbar-item{
+    gap: 6px;
+
+  }
+
+
+  .topbar-item ion-icon{
+    --ionicon-stroke-width:60px
+  }
+
+  .topbar-item .span{
+    font-size: var(--fontSize-label-1);
+  }
+
+
+  .topbar .link{
+    transition: var(--transition-1);
+  }
+
+  .topbar .link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+  }
+
+
+  .header{
+    top: 51px;
+  }
+
+  .header.active{
+    top: 0;
+  }
+
+.header .btn{
+  display: block;
+  margin-inline-start: auto;
+}
+
+
+.hero-btn{
+  transform: scale(0.7);
+}
+
+
+.service .container{
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+
+.about .container{
+  gap: 80px;
+}
+
+.about-banner > .w-100{
+  padding-inline-start: 90px;
+}
+
+.about .abs-img-1{
+  width: 285px;
+}
+
+.about .contact-number{
+  --fontSize-body-1: 2.4rem;
+}
+
+
+
+}
