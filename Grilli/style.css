@@ -2034,4 +2034,35 @@ textarea.input-field {
     background-color: var(--gold-crayola);
     color: var(--black) ;
   }
+
+
+  .reservation .input-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+  }
+
+  .reservation .input-wrapper:nth-child(4) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-brand{
+    grid-column: 1 / 3;
+
+  }
+
+
+
+  
+
+
+
+
+
+}
+
+
+@media (min-width: 992px){
+  
 }
