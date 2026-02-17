@@ -2300,7 +2300,106 @@ textarea.input-field {
     margin-block-end: 75px;
   }
 
+  .about{
+    padding-block: 170px 100px;
+  }
+
+  .special-dish-content{
+    padding: 225px 120px;
+    padding-inline: 0;
+
+  }
+
+  .special-dish-content .container{
+    max-width: 460px;
+    margin-inline:0 ;
+
+  }
+
+  .menu .grid-list{
+    gap: 55px 200px; 
+    margin-block-end: 55px;
+  }
+
+  .form-left,
+  .form-right{
+    padding: 75px 60px;
+
+  }
+
+  .features .grid-list {
+    grid-template-columns: repeat(4, 1fr); }
+
   
+
+}
+
+
+@media (min-width: 1400px){
+
+  .navbar{
+    margin-inline: auto;
+
+  }
+
+
+
+
+  .about-content{
+    padding-inline-end: 90px;
+
+  }
+
+  .about .shape{
+    display: block;
+    top: 46%;
+    left: 0;
+
+  }
+
+  .special-dish{
+    overflow: visible;
+    position: relative;
+  }
+
+  .special-dish .shape{
+    display: block;
+    right: 0;
+    z-index: 1;
+  }
+
+  .special-dish .shape-1{
+    top: 45%;
+  }
+
+  .special-dish .shape-2{
+    bottom: 0;
+    transform: translateY(50%);
+    width: max-content;
+  }
+
+  .features{
+    overflow: visible;
+
+  }
+
+  .features .shape {
+    display: block;
+  }
+
+  .features .shape-1{
+    top: -100px;
+    right: 0;
+
+  }
+
+  .features .shape-2{
+    bottom: 80px;
+    left: 0;
+  }
+
+  
+
 
 }
 
